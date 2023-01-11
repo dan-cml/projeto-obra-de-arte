@@ -32,6 +32,7 @@ header {
     padding: 5px 7px 12px 0px;
     top: 0;
     left: 0;
+    width: 100%;
 }
 
 header > a > span {
@@ -79,7 +80,16 @@ main > section.texto > a.botao {
     color: var(--marrom);
 }
 
-main > section.obras > div > img {
-    width: 40vw;
+main > section.obras > div {
+    margin: 5px;
 }
 
+main > section.obras > div > img {
+    width: 40vw;
+    padding: 5px;
+}
+
+main > section.obras{
+    display: flex;
+    justify-content: center;
+}
