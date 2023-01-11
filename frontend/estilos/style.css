@@ -78,3 +78,7 @@ main > section.texto > a.botao {
     color: var(--marrom);
 }
 
+main > section.obras > div > img {
+    width: 40vw;
+}
+
