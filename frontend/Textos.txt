@@ -1,0 +1,4 @@
+Tela Inicio
+	Texto de titulo - "As obras de arte originais são criadas com precisão e atenção aos detalhes, encontre obras de arte unicas e de qualidade com a Inpired Haven"
+
+	Texto em baixo - "Descubra a ampla seleção de obras de arte e explore com a Inpired Haven para encontrar obras clássicas e exclusivas para qualquer estilo. Descubra a coleção de obras de arte: a combinação perfeita de criatividade e estilo."

@@ -1,0 +1,9 @@
+Para fazer o video que fica passando em looping na tea inicial:
+	- Vai usar o power point e jogar todas as imagens para lá
+	- Colcoar em todas a trasnição "Esmaecer"
+	- intervalo de duração de 1,5s e avanço de slide apôs 2s
+	- Vai em arquivo, exportar, criar video e um video HD e deixar 1,5s entre slides
+	- No HTML via usar a tag "video"
+	- definir apenas (dentro da tag video <>) o width e colocar autoplay loop muted
+	- detro da tag de abertura e fechamento do video vai abrir a tag "sourcer"
+	- vai pegar por lá o arquivo de video e colocar o type="video/mp4"

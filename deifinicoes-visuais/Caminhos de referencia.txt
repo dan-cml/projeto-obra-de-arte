@@ -1,0 +1,8 @@
+Paleta ultilizada - https://coolors.co/89888c-a8b0bf-dce4f2-595248-242424
+
+Fonts-
+Textos (light) e botões e menu (normal) - https://fonts.google.com/specimen/Red+Hat+Display?query=play
+Nome (bold) e preços (light) - https://fonts.google.com/specimen/Jura?query=Jura
+Títulos (regular, procurar melhores opções) - https://fonts.google.com/specimen/Kanit?preview.text=Um%20t%C3%ADtulo%20qualquer&preview.text_type=custom
+
+código - @import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500&family=Kanit&family=Red+Hat+Display:wght@300;400&display=swap');

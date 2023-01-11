@@ -1,0 +1,47 @@
+IA DE IDEIAS - https://chat.openai.com/chat
+IA DE OBRAS DE ARTE - https://labs.openai.com/
+EXEMPLO DE SITE DE ARTE
+https://www.vitorliberato.com/artes (incluindo estilo de impressão de fotografias)
+https://blombo.com/
+https://obrah.com.br/ (estilo de impressão de obras)
+https://www.artfinder.com/artist/bast/
+https://artsoul.com.br/
+
+OPÇÕES DE NOMES - 
+Masterpiece Gallery
+Artful Abode
+Inspired Haven ***
+
+IA para logo - https://brandmark.io/
+Melhorar imagens (prints do logo) - https://zyro.com/br/ferramentas/upscaler-de-imagem
+
+Telas essenciais:
+*Ínicio - FEITO
+*Destaque - FEITO
+*Artistas - FEITO
+*Página do Artista - FEITO
+*Contato - FEITO
+*Local com todas as obras, podendo usar alguns filtros - FEITO
+*Ver detalhes do quadro (quando clica em alguma arte) - FEITO
+*Login Cliente - FEITO
+*Login Artista - FEITO
+*Cadastro Cliente - FEITO
+*Cadastro Artista (formulário) - FEITO
+*Área do Artista (como na shopee)
+*Carrinho de compra - FEITO
+*Todo processo de efetivação de compra (seguir obrah) - FEITO
+
+
+10. Mercado online para artistas(enviando um quadro apôs a compra (fazer através de IA as artes): um site onde os artistas podem vender suas obras de arte e se conectar com potenciais compradores. C# pode ser usado para a lógica de back-end, como gerenciamento de perfis de artistas e processamento de transações, e HTML/CSS pode ser usado para o design das listagens de arte e outras páginas.
+
+**Fazer um parte onde, acima de tantos reais gastos, pode ter um projeto exclusivo de um ambiente com a populare (site obrah tem algo parecido em https://obrah.com.br/pages/venda-corporativa)
+
+
+Linguagens -
+C# .NET
+HTML
+CSS
+JavaScript
+
+Banco de dados -
+Microsoft server
