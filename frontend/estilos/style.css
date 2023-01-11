@@ -37,6 +37,7 @@ header {
 header > a > span {
     background-color: var(--maisescura);
     color: rgba(255, 255, 255, 0.849);
+    padding: 0px 9px;
 }
 
 
