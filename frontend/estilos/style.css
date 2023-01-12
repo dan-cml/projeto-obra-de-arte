@@ -27,20 +27,21 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
     position: sticky;
     background-color: var(--maisescura);
-    padding: 5px 7px 12px 0px;
+    padding: 15px 7px 12px 0px;
     top: 0;
     left: 0;
     width: 100%;
 }
 
-header > a > span {
+header > div > a > span {
     background-color: var(--maisescura);
     color: rgba(255, 255, 255, 0.849);
-    padding: 0px 9px;
+    padding: 0px 6px;
 }
-
 
 nav {
     text-align: center;
@@ -87,6 +88,15 @@ main > section.obras > div {
 main > section.obras > div > img {
     width: 40vw;
     padding: 5px;
+}
+
+main > section.obras > div > div {
+    text-align: center;
+}
+
+main > section.obras > div > div > hr {
+    margin: auto;
+    width: 20px;
 }
 
 main > section.obras{
