@@ -9,3 +9,40 @@ Tablet: 768px até 992px
 Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
 */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --maisescura: #242424;
+    --marrom: #595248;
+    --azulclaro: #DCE4F2;
+    --azulcinza: #A8B0BF;
+    --cinza: #89888C;
+
+    /* Para texto usar *light* e botões e menu *normal* */
+    --fontetexto: 'Red Hat Display' ,'Times New Roman', Times, serif;
+    --fontetitulo: 'Kanit','Times New Roman', Times, serif;
+    /* Para título de obra *bold* e preço *light* */
+    --fontearte: 'Jura','Times New Roman', Times, serif;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    main > section.video > video {
+        background-color: var(--azulcinza);
+        width: 100vw;
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main > section.video > video {
+        background-color: var(--azulcinza);
+        width: 100vw;
+        height: 500px;
+    }
+}

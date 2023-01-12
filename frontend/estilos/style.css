@@ -102,15 +102,15 @@ main > section.obras > ul > li > div {
 
 main > section.obras > ul > li > div > div.areaobra {
     height: 250px;
-    width: 210px;
+    width: 200px;
 }
 
 main > section.obras > ul > li > div > div > img {
     width: 200px;
     padding: 5px;
     border: 1vw solid #323330;
+    box-shadow: inset 3px 3px 3px #89888c93;
     box-shadow: 3px 3px 3px #89888c93;
-    box-shadow: inset -10px -10px -10px black;
 }
 
 main > section.obras > ul > li > div > div {
