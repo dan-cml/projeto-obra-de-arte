@@ -101,13 +101,13 @@ main > section.obras > ul > li > div {
 }
 
 main > section.obras > ul > li > div > div.areaobra {
-    height: 250px;
+    height: 210px;
     /* width: 200px; 
     Essa medida vai ter que ter quando for para outras telas*/
 }
 
 main > section.obras > ul > li > div > div > img {
-    width: 180px;
+    width: 150px;
     padding: 5px;
     border: 1vw solid #323330;
     box-shadow: inset 3px 3px 3px #89888c93;
