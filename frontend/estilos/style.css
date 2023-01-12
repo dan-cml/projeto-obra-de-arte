@@ -98,14 +98,17 @@ main > section.obras > ul {
 main > section.obras > ul > li > div {
     margin: 5px;
     margin-bottom: 20px;
-    width: 40vw;
 }
 
-main > section.obras > ul > li > div > img {
-    width: 40vw;
-    height: 40vw;
+main > section.obras > ul > li > div > div.areaobra {
+    height: 250px;
+    width: 210px;
+}
+
+main > section.obras > ul > li > div > div > img {
+    width: 200px;
     padding: 5px;
-    border: 1vw solid #242424;
+    border: 1vw solid #323330;
     box-shadow: 3px 3px 3px #89888c93;
     box-shadow: inset -10px -10px -10px black;
 }
@@ -113,6 +116,20 @@ main > section.obras > ul > li > div > img {
 main > section.obras > ul > li > div > div {
     text-align: center;
     padding: 5px;
+}
+
+main > section > ul > li > div > div > p {
+    padding: 5px;
+}
+
+main > section > ul > li > div > div > p.titulo {
+    font-family: var(--fontearte);
+    font-weight: bold;
+}
+
+main > section > ul > li > div > div > p.valor {
+    font-family: var(--fontearte);
+    font-weight: lighter;
 }
 
 main > section.obras > ul > li > div > div > hr {
