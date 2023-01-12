@@ -85,6 +85,11 @@ main > section.texto > a.botao {
     color: var(--marrom);
 }
 
+main > section.obras{
+    display: flex;
+    justify-content: center;
+}
+
 main > section.obras > ul {
     list-style: none;
     columns: 2;
@@ -92,25 +97,27 @@ main > section.obras > ul {
 
 main > section.obras > ul > li > div {
     margin: 5px;
+    margin-bottom: 20px;
+    width: 40vw;
 }
 
 main > section.obras > ul > li > div > img {
     width: 40vw;
+    height: 40vw;
     padding: 5px;
+    border: 1vw solid #242424;
+    box-shadow: 3px 3px 3px #89888c93;
+    box-shadow: inset -10px -10px -10px black;
 }
 
-main > section.obras > ul > li div > div {
+main > section.obras > ul > li > div > div {
     text-align: center;
+    padding: 5px;
 }
 
 main > section.obras > ul > li > div > div > hr {
     margin: auto;
     width: 20px;
-}
-
-main > section.obras{
-    display: flex;
-    justify-content: center;
 }
 
 main > a.botao {
