@@ -61,7 +61,7 @@ main {
 }
 
 main > section.texto {
-    padding: 30px 20px 60px 20px;
+    padding: 30px 20px 20px;
 }
 
 main > section.texto > h2 {
@@ -88,6 +88,7 @@ main > section.texto > a.botao {
 main > section.obras{
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 main > section.obras > ul {
@@ -109,7 +110,7 @@ main > section.obras > ul > li > div > div.areaobra {
 main > section.obras > ul > li > div > div > img {
     width: 150px;
     padding: 5px;
-    border: 1vw solid #323330;
+    border: 5px solid #323330;
     box-shadow: inset 3px 3px 3px #89888c93;
     box-shadow: 3px 3px 3px #89888c93;
 }
