@@ -58,6 +58,7 @@ nav > a {
 
 main {
     margin-bottom: 30px;
+    margin: auto;
 }
 
 main > section.texto {

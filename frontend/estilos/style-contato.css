@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500&family=Kanit&family=Red+Hat+Display:wght@300;400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --maisescura: #242424;
+    --marrom: #595248;
+    --azulclaro: #DCE4F2;
+    --azulcinza: #A8B0BF;
+    --cinza: #89888C;
+
+    /* Para texto usar *light* e botões e menu *normal* */
+    --fontetexto: 'Red Hat Display' ,'Times New Roman', Times, serif;
+    --fontetitulo: 'Kanit','Times New Roman', Times, serif;
+    /* Para título de obra *bold* e preço *light* */
+    --fontearte: 'Jura','Times New Roman', Times, serif;
+}
+
+main > section.imagem {
+    background-image: url('../testes/falando-no-telefone.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    opacity: 0.6;
+}
+
+main > section.contato {
+    padding: 10px;
+}
+
+main > section.imagem > div {
+    height: 250px;
+}
+
+main > section.contato > h2{
+    font-size: 1.5em;
+    font-family: var(--fontetexto);
+    font-weight: normal;
+    padding-bottom: 5px;
+}
+
+main > section.contato > p {
+    padding: 5px;
+}
+
+main > section.contato > ul {
+    text-indent: 50px;
+    list-style-position: inside;
+    margin-bottom: 10px;
+}
+
+main > section.formulariocontato {
+    margin: 15px;
+}
+
+main > section.formulariocontato > form > input {
+    width: 60vw;
+}
+
+main > section.formulariocontato > form > input[type=submit] {
+    width: 60px;
+}

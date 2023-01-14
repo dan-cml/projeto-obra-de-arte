@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Inspired Haven</title>
+    <link rel="shortcut icon" href="../../deifinicoes-visuais/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/style.css" media="all">
+    <link rel="stylesheet" href="../estilos/style-contato.css">
+    <link rel="stylesheet" href="../estilos/media-query.css">
+</head>
+<body>
+    <header>
+        <div><a href="../index.html"><img src="../../deifinicoes-visuais/pagina-inicial.png" alt="Logo" width="250px"></a></div>
+        <div>
+            <a href="#"><span class="material-icons">person</span></a>
+            <a href="#"><span class="material-icons">favorite</span></a>
+            <a href="#"><span class="material-icons">shopping_bag</span></a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="destaques.html">Destaques</a>
+        <a href="#">Artistas</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <main>
+        <section class="imagem">
+            <div></div>
+        </section>
+
+        <section class="contato">
+            <h2>Contato</h2>
+            <hr>
+            <p>Entre em contato conosco</p>
+            <p>E-mail: <a href="mailto:emailcontato@gmail.com">emailcontato@gmail.com</a></p>
+            <p>Nosso time irá responder em até 48h</p>
+            <ul>
+                <li>De segundo a sexta das 08h às 18h</li>
+                <li>Fins de semana e feriado - fechado</li>
+            </ul>
+            <hr>
+        </section>
+
+        <section class="formulariocontato">
+            <form action="arquivo.cs" method="post">
+                <label for="inome">Nome</label><br>
+                <input type="text" name="nome" id="inome" required><br>
+                <label for="iemail">E-mail</label><br>
+                <input type="email" name="email" id="iemail"><br>
+                <label for="iassunto">Assunto</label><br>
+                <select name="assnto" id="iassunto" required>
+                    <option value="cliente">Sou comprador</option>
+                    <option value="artista">Sou artista</option>
+                    <option value="outros">Outros (assunto na menssagem)</option>
+                </select><br>
+                <label for="imenssagem">Menssagem</label><br>
+                <textarea name="menssagem" id="imenssagem" cols="30" rows="10" placeholder="Digite aqui sua menssagem"></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+        <ul>
+            <li>
+                <div>
+                <a href="#">Sobre</a>
+                <a href="#"><span class="material-icons">add</span></a>
+                </div>
+            </li>
+            <li>
+                <div>
+                <a href="#">Informação</a>
+                <a href="#"><span class="material-icons">add</span></a>
+                </div>
+            </li>
+        </ul>
+    </footer>
+    <hr>
+</body>
+</html>
