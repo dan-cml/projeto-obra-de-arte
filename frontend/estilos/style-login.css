@@ -29,12 +29,12 @@ main > section.campo-de-verificacao {
     font-size: 3.5vw;
 }
 
-main > section.login {
+main > section.info {
     display: flex;
     justify-content: center;
 }
 
-main > section.login > form > label {
+main > section.info > form > label {
     display: none; 
 }
 
@@ -45,26 +45,31 @@ main > section > form > input {
     border-top: none;
     border-width: 1px;
     width: 60vw;
-    height: 25px;
+    height: 30px;
     font-size: .9em;
-    margin-top: 6px;
+    margin: 6px;
 }
 
-main > section.login > form > div {
+main > section.info > form > div {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-main > section.login > form > div > input[type = submit] {
-    width: 60px;
+main > section.info > form > div > input[type = submit] {
+    width: 80px;
     border: 1px solid var(--marrom);
     border-radius: 20px;
     padding: 3px 10px;
     background-color: #89888c28;
 }
 
-main > section.login > form > div > a {
+main > section.info > form > div > div > label {
+    font-size: .7em;
+}
+
+main > section.info > form > div > a {
     text-decoration: none;
     color: var(--cinza);
+    font-size: .9em;
 }

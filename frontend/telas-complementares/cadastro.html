@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Inspired Haven</title>
+    <title>Cadastro | Inspired Haven</title>
     <link rel="shortcut icon" href="../../deifinicoes-visuais/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../estilos/style.css" media="all">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../estilos/media-query.css">
 </head>
 <body>
-    <!-- Falta colocar o ""Se preferir, entre com uma rede social!" e os icones do face e gmail -->
+    <!-- Falta colocar o "Se preferir, entre com uma rede social!" e os icones do face e gmail -->
     <header>
         <div><a href="../index.html"><img src="../../deifinicoes-visuais/pagina-inicial.png" alt="Logo" width="250px"></a></div>
         <div>
@@ -33,20 +33,30 @@
         <section class="campo-de-verificacao">
             <!-- Adicionar Javascript que ao clicar em cada icone, vai mudar o display (tirando o none e entrando) e entrar em cada do cliente e login, o cadastro vai pra outra tela mesmo (ou vê como fica para fazer nessa mesma tela)-->
             <nav>
-                <a href="#" class="utilizando">Login Cliente</a>
-                <a href="#">Login Artista</a>
-                <a href="cadastro.html">Cadastro</a>
+                <a href="login.html">Login Cliente</a>
+                <a href="login.html">Login Artista</a>
+                <a href="#" class="utilizando">Cadastro</a>
             </nav>
         </section>
+        <!-- Falta colocar o cadastro com rede social e tambem um paragrafo com o link para cadastro do artista -->
         <section class="info">
-            <form action="login.cs" method="post">
+            <form action="cadastro.cs" method="post" autocomplete="on">
+                <label for="inome">Nome</label><br>
+                <input type="text" name="nome" id="inome" required placeholder="Nome"><br>
+                <label for="isobrenome">Sobrenome</label><br>
+                <input type="text" name="sobrenome" id="isobrenome" required placeholder="Sobrenome"><br>
+                <label for="itelefone">Telefone</label><br>
+                <input type="tel" name="telefone" id="itelefone" required placeholder="Telefone"><br>
                 <label for="ilogin">Login</label><br>
                 <input type="email" name="login" id="ilogin" required placeholder="E-mail"><br>
                 <label for="isenha">Senha</label><br>
                 <input type="password" name="senha" id="isenha" required placeholder="Senha"><br>
                 <div>
-                    <a href="#">Esqueci minha senha</a>
-                    <input type="submit" value="Entrar">
+                    <div>
+                        <input type="checkbox" name="termos" id="itermos">
+                        <label for="itermos">Concorda com os Termos de uso da Inspired Haven</label>
+                    </div>
+                    <input type="submit" value="Cadastrar">
                 </div>
             </form>
         </section>
