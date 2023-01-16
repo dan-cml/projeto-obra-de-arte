@@ -61,6 +61,23 @@ main > section.formulariocontato {
 
 main > section.formulariocontato > form > input {
     width: 60vw;
+    padding: 3px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+main > section.formulariocontato > form > select {
+    width: 60vw;
+    padding: 3px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+main > section.formulariocontato > form > textarea {
+    width: 60vw;
+    padding: 3px;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 main > section.formulariocontato > form > input[type=submit] {

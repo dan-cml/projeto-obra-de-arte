@@ -56,6 +56,11 @@ nav > a {
     padding: 15px;
 }
 
+nav > a.utilizando {
+    color: var(--azulcinza);
+}
+
+
 main {
     margin-bottom: 30px;
     margin: auto;
