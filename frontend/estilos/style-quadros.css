@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 main {
-    padding: 30px;
+    padding: 25px;
 }
 
 main > div.imagens {
@@ -10,7 +10,7 @@ main > div.imagens {
 }
 
 main > div.imagens > img {
-    width: 70vw;
+    width: 65vw;
 }
 
 main > div.imagens > div > img {
