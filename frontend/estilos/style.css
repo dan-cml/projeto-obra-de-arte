@@ -76,7 +76,7 @@ main > section.texto > h2 {
     margin-bottom: 15px;
 }
 
-main > section.texto > p{
+main > section.texto > p {
     font-family: var(--fontetexto);
     font-weight: lighter;
     font-size: 1.1em;
@@ -114,6 +114,14 @@ main > section.obras > ul > li > div > div.areaobra {
 }
 
 main > section.obras > ul > li > div > div > img {
+    width: 150px;
+    padding: 5px;
+    border: 5px solid #323330;
+    box-shadow: inset 3px 3px 3px #89888c93;
+    box-shadow: 3px 3px 3px #89888c93;
+}
+
+main > section.obras > ul > li > div > div > a > img {
     width: 150px;
     padding: 5px;
     border: 5px solid #323330;

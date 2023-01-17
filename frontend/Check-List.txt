@@ -1,15 +1,15 @@
 Telas concluidas:
-*Ínicio - FEITO
+*Ínicio - FEITO com observações
 *Destaque - FEITO
-*Artistas - FEITO
-*Página do Artista - FEITO
+*Artistas
+*Página do Artista
 *Contato - FEITO
-*Local com todas as obras, podendo usar alguns filtros - FEITO
-*Ver detalhes do quadro (quando clica em alguma arte) - FEITO
-*Login Cliente - FEITO
-*Login Artista - FEITO
-*Cadastro Cliente - FEITO
-*Cadastro Artista (formulário) - FEITO
+*Local com todas as obras, podendo usar alguns filtros
+*Ver detalhes do quadro (quando clica em alguma arte)
+*Login Cliente - FEITO com observações
+*Login Artista - FEITO com observações
+*Cadastro Cliente - FEITO com observações
+*Cadastro Artista (formulário)
 *Área do Artista (como na shopee)
-*Carrinho de compra - FEITO
-*Todo processo de efetivação de compra (seguir obrah) - FEITO
+*Carrinho de compra
+*Todo processo de efetivação de compra (seguir obrah)
