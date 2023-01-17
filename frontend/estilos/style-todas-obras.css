@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+main > div.classifica {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+main > div.classifica > p > hr {
+    
+}

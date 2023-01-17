@@ -36,11 +36,11 @@
         <div class="imagens">
             <div>
                 <span class="material-icons">expand_less</span>
-                <img src="../testes/DALL·E 2023-01-10 16.52.59 - a oil and watercolor drawing of a bright city in the future with flying cars.png" alt="Quadro Aquarela Futurista" class="quadro">
-                <img src="../testes/DALL·E 2023-01-10 16.52.59 - a oil and watercolor drawing of a bright city in the future with flying cars.png" alt="Quadro Aquarela Futurista">
+                <img src="../testes/DALL·E 2023-01-10 16.52.59 - a oil and watercolor drawing of a bright city in the future with flying cars.png" alt="Quadro Aquarela Futurista" class="quadro" id="opcoes" onclick="opcao1()">
+                <img src="../testes/DALL·E 2023-01-10 16.52.59 - a oil and watercolor drawing of a bright city in the future with flying cars.png" alt="Quadro Aquarela Futurista" name="opcoes" onclick="opcao2()">
                 <span class="material-icons">expand_more</span>
             </div>
-            <img src="../testes/DALL·E 2023-01-10 16.52.59 - a oil and watercolor drawing of a bright city in the future with flying cars.png" alt="Quadro Aquarela Futurista">
+            <img src="../testes/DALL·E 2023-01-10 16.52.59 - a oil and watercolor drawing of a bright city in the future with flying cars.png" alt="Quadro Aquarela Futurista" id="principal">
         </div>
         <div class="informacoes">
             <h2>Aquarela Futurista</h2>
@@ -74,5 +74,24 @@
         </ul>
     </footer>
     <hr>
+
+    <script>
+        function opcao1() {
+            var opcao = document.getElementsByTagName('opcoes')
+            var principal = document.getElementById('principal')
+
+            principal.style.border = '5px solid #323330'
+            principal.style.padding = '15px'
+        }
+
+        function opcao2() {
+            var opcao = document.getElementsByTagName('opcoes')
+            var principal = document.getElementById('principal')
+
+            principal.style.border = 'none'
+            principal.style.padding = 'none'
+            principal.style.margin = 'none'
+        }
+    </script>
 </body>
 </html>
