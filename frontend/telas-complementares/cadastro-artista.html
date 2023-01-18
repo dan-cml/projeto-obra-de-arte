@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro | Inspired Haven</title>
+    <title>Formulário de cadastro</title>
     <link rel="shortcut icon" href="../../deifinicoes-visuais/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../estilos/style.css" media="all">
@@ -12,11 +12,10 @@
     <link rel="stylesheet" href="../estilos/media-query.css">
 </head>
 <body>
-    <!-- Falta colocar o "Se preferir, entre com uma rede social!" e os icones do face e gmail -->
     <header>
         <div><a href="../index.html"><img src="../../deifinicoes-visuais/pagina-inicial.png" alt="Logo" width="250px"></a></div>
         <div>
-            <a href="#"><span class="material-icons">person</span></a>
+            <a href="login.html"><span class="material-icons">person</span></a>
             <a href="#"><span class="material-icons">favorite</span></a>
             <a href="#"><span class="material-icons">shopping_bag</span></a>
         </div>
@@ -30,15 +29,6 @@
     </nav>
 
     <main>
-        <section class="campo-de-verificacao">
-            <!-- Adicionar Javascript que ao clicar em cada icone, vai mudar o display (tirando o none e entrando) e entrar em cada do cliente e login, o cadastro vai pra outra tela mesmo (ou vê como fica para fazer nessa mesma tela)-->
-            <nav>
-                <a href="login.html">Login Cliente</a>
-                <a href="login.html">Login Artista</a>
-                <a href="#" class="utilizando">Cadastro</a>
-            </nav>
-        </section>
-        <!-- Falta colocar o cadastro com rede social e tambem um paragrafo com o link para cadastro do artista -->
         <section class="info">
             <form action="cadastro.cs" method="post" autocomplete="on">
                 <label for="inome">Nome</label><br>
@@ -47,6 +37,12 @@
                 <input type="text" name="sobrenome" id="isobrenome" required placeholder="Sobrenome"><br>
                 <label for="itelefone">Telefone</label><br>
                 <input type="tel" name="telefone" id="itelefone" required placeholder="Telefone"><br>
+                <label for="icpf">CPF</label><br>
+                <input type="tel" name="cpf" id="icpf" required placeholder="CPF"><br>
+                <select name="tipodeexposicao" id="itipodeexposicao"><br>
+                    <option value="atelie">Ateliê (Artista Plástico)</option>
+                    <option value="estudio">Estúdio (Fotografo ou Designer)</option>
+                </select>
                 <label for="ilogin">Login</label><br>
                 <input type="email" name="login" id="ilogin" required placeholder="E-mail"><br>
                 <label for="isenha">Senha</label><br>
@@ -56,11 +52,10 @@
                         <input type="checkbox" name="termos" id="itermos">
                         <label for="itermos">Concorda com os Termos de uso da Inspired Haven</label>
                     </div>
-                    <input type="submit" value="Cadastrar">
+                    <input type="submit" value="Enviar">
                 </div>
             </form>
         </section>
-        <p>"Sou artista e gostaria de expor minha arte", <a href="cadastro-artista.html">clique aqui</a></p>
     </main>
 
     <hr>

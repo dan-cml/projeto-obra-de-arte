@@ -50,6 +50,19 @@ main > section > form > input {
     margin: 6px;
 }
 
+main > section > form > select {
+    border-color: var(--azulclaro);
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-width: 1px;
+    width: 60vw;
+    height: 30px;
+    font-size: .9em;
+    margin: 6px;
+    color: var(--cinza);
+}
+
 main > section.info > form > div {
     display: flex;
     justify-content: space-between;
@@ -71,5 +84,11 @@ main > section.info > form > div > div > label {
 main > section.info > form > div > a {
     text-decoration: none;
     color: var(--cinza);
+    font-size: .9em;
+}
+
+main > p {
+    padding: 30px;
+    text-align: center;
     font-size: .9em;
 }
