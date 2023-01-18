@@ -6,6 +6,45 @@ main > div.classifica {
     padding: 30px;
 }
 
-main > div.classifica > p > hr {
-    
+main > div.filtro {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+main > div.filtro > div.op {
+    width: 120px;
+    height: 60px;
+    background-color: red;
+    opacity: .7;
+    font-weight: bolder;
+}
+
+main > div.filtro > div#minimalismo {
+    display: flex;
+    background-image: url('../testes/minimalismo.jpg');
+    background-position: center center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div.filtro > div#fotografia {
+    display: flex;
+    background-image: url('../testes/DALL·E\ 2023-01-13\ 14.40.27\ -\ \ a\ vertical\ photo\ of\ the\ animal\ world\ in\ amazon.png');
+    background-position: center center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div.filtro > div#abstrata {
+    display: flex;
+    background-image: url('../testes/DALL·E\ 2023-01-10\ 17.13.40\ -\ \ Create\ a\ Van-Gogh\ style\ painting.png');
+    background-position: center center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
 }
