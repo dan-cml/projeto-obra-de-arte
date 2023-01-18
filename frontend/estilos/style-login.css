@@ -25,6 +25,10 @@ main {
     margin-top: 10vh;
 }
 
+main > h2 {
+    text-align: center;
+}
+
 main > section.campo-de-verificacao {
     font-size: 3.5vw;
 }

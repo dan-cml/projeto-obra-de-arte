@@ -29,6 +29,7 @@
     </nav>
 
     <main>
+        <h2>Cadastro Artista</h2>
         <section class="info">
             <form action="cadastro.cs" method="post" autocomplete="on">
                 <label for="inome">Nome</label><br>
@@ -38,7 +39,7 @@
                 <label for="itelefone">Telefone</label><br>
                 <input type="tel" name="telefone" id="itelefone" required placeholder="Telefone"><br>
                 <label for="icpf">CPF</label><br>
-                <input type="tel" name="cpf" id="icpf" required placeholder="CPF"><br>
+                <input type="number" name="cpf" id="icpf" required placeholder="CPF"><br>
                 <select name="tipodeexposicao" id="itipodeexposicao"><br>
                     <option value="atelie">Ateliê (Artista Plástico)</option>
                     <option value="estudio">Estúdio (Fotografo ou Designer)</option>
@@ -49,7 +50,7 @@
                 <input type="password" name="senha" id="isenha" required placeholder="Senha"><br>
                 <div>
                     <div>
-                        <input type="checkbox" name="termos" id="itermos">
+                        <input type="checkbox" name="termos" id="itermos" required>
                         <label for="itermos">Concorda com os Termos de uso da Inspired Haven</label>
                     </div>
                     <input type="submit" value="Enviar">
