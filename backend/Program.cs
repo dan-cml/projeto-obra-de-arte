@@ -1,6 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using backend.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddControllersWithViews();
+
+//CONFIGURAÇÃO COMEÇA AQUI
+builder.Services.AddDbContext<CadastroContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoPadrao")));
+//CONFIGURAÇÃO TERMINA AQUI
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
