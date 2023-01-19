@@ -9,7 +9,7 @@ Telas concluidas:
 *Login Cliente - FEITO com observações
 *Login Artista - FEITO com observações
 *Cadastro Cliente - FEITO com observações
-*Cadastro Artista (formulário)
+*Cadastro Artista (formulário) - FEITO
 *Área do Artista (como na shopee)
 *Carrinho de compra
 *Todo processo de efetivação de compra (seguir obrah)
