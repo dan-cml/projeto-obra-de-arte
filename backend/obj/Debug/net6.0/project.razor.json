@@ -16303,6 +16303,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Programacao\\Projeto-1-2023\\projeto-obra-de-arte\\backend\\Views\\Cadastro\\Criar.cshtml",
+      "TargetPath": "Views\\Cadastro\\Criar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Programacao\\Projeto-1-2023\\projeto-obra-de-arte\\backend\\Views\\Cadastro\\Index.cshtml",
+      "TargetPath": "Views\\Cadastro\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Programacao\\Projeto-1-2023\\projeto-obra-de-arte\\backend\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"

@@ -1,0 +1,381 @@
+@model backend.Models.Cadastro
+
+@{
+    ViewData["Title"] = "Cadastro de usuário";
+}
+
+<style>
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --maisescura: #242424;
+        --marrom: #595248;
+        --azulclaro: #DCE4F2;
+        --azulcinza: #A8B0BF;
+        --cinza: #89888C;
+
+        /* Para texto usar *light* e botões e menu *normal* */
+        --fontetexto: 'Red Hat Display' ,'Times New Roman', Times, serif;
+        --fontetitulo: 'Kanit','Times New Roman', Times, serif;
+        /* Para título de obra *bold* e preço *light* */
+        --fontearte: 'Jura','Times New Roman', Times, serif;
+    }
+
+    body {
+        font-family: var(--fontetexto);
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        position: sticky;
+        background-color: var(--maisescura);
+        padding: 15px 7px 12px 0px;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    header > div > a > span {
+        background-color: var(--maisescura);
+        color: rgba(255, 255, 255, 0.849);
+        padding: 0px 6px;
+    }
+
+    nav {
+        text-align: center;
+        margin: 15px 0px;
+    }
+
+    nav > a {
+        font-family: var(--fontetexto);
+        font-weight: normal;
+        text-decoration: none;
+        color: var(--maisescura);
+        padding: 15px;
+    }
+
+    nav > a.utilizando {
+        color: var(--azulcinza);
+    }
+
+
+    main {
+        margin-bottom: 30px;
+        margin: auto;
+    }
+
+    main > section.texto {
+        padding: 30px 20px 20px;
+    }
+
+    main > section.texto > h2 {
+        font-family: var(--fontetexto);
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    main > section.texto > p {
+        font-family: var(--fontetexto);
+        font-weight: lighter;
+        font-size: 1.1em;
+        margin-bottom: 21px;
+    }
+
+    main > section.texto > a.botao {
+        border: 1px solid var(--marrom);
+        border-radius: 20px;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: var(--marrom);
+    }
+
+    main > section.obras{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    main > section.obras > ul {
+        list-style: none;
+        columns: 2;
+    }
+
+    main > section.obras > ul > li > div {
+        margin: 5px;
+        margin-bottom: 20px;
+    }
+
+    main > section.obras > ul > li > div > div.areaobra {
+        height: 210px;
+        /* width: 200px; 
+        Essa medida vai ter que ter quando for para outras telas*/
+    }
+
+    main > section.obras > ul > li > div > div > img {
+        width: 150px;
+        padding: 5px;
+        border: 5px solid #323330;
+        box-shadow: inset 3px 3px 3px #89888c93;
+        box-shadow: 3px 3px 3px #89888c93;
+    }
+
+    main > section.obras > ul > li > div > div > a > img {
+        width: 150px;
+        padding: 5px;
+        border: 5px solid #323330;
+        box-shadow: inset 3px 3px 3px #89888c93;
+        box-shadow: 3px 3px 3px #89888c93;
+    }
+
+    main > section.obras > ul > li > div > div {
+        text-align: center;
+        padding: 5px;
+    }
+
+    main > section > ul > li > div > div > p {
+        padding: 5px;
+    }
+
+    main > section > ul > li > div > div > p.titulo {
+        font-family: var(--fontearte);
+        font-weight: bold;
+    }
+
+    main > section > ul > li > div > div > p.valor {
+        font-family: var(--fontearte);
+        font-weight: lighter;
+    }
+
+    main > section.obras > ul > li > div > div > hr {
+        margin: auto;
+        width: 20px;
+    }
+
+    main > a.botao {
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid #59524828;
+        border-radius: 20px;
+        width: 200px;
+        color: #242424;
+        box-shadow: 0px 0px 3px #24242444;
+        padding: 3px;
+    }
+
+    hr {
+        border-color: #2424241c;
+    }
+
+    footer {
+        padding: 15px 0px;
+    }
+
+    footer > ul {
+        list-style: none;
+    }
+
+    footer > ul > li {
+        padding: 6px;
+    }
+
+    footer > ul > li > div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer > ul > li > div > a {
+        text-decoration: none;
+        color: var(--maisescura);
+    }
+</style>
+
+<style>
+    * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+    :root {
+        --maisescura: #242424;
+        --marrom: #595248;
+        --azulclaro: #DCE4F2;
+        --azulcinza: #A8B0BF;
+        --cinza: #89888C;
+
+        /* Para texto usar *light* e botões e menu *normal* */
+        --fontetexto: 'Red Hat Display' ,'Times New Roman', Times, serif;
+        --fontetitulo: 'Kanit','Times New Roman', Times, serif;
+        /* Para título de obra *bold* e preço *light* */
+        --fontearte: 'Jura','Times New Roman', Times, serif;
+    }
+
+    main {
+        margin-bottom: 10vh;
+        margin-top: 10vh;
+    }
+
+    main > h2 {
+        text-align: center;
+    }
+
+    main > section.campo-de-verificacao {
+        font-size: 3.5vw;
+    }
+
+    main > section.info {
+        display: flex;
+        justify-content: center;
+    }
+
+    main > section.info > form > label {
+        display: none; 
+    }
+
+    main > section > form > input {
+        border-color: var(--azulclaro);
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border-width: 1px;
+        width: 60vw;
+        height: 30px;
+        font-size: .9em;
+        margin: 6px;
+    }
+
+    main > section > form > select {
+        border-color: var(--azulclaro);
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        border-width: 1px;
+        width: 60vw;
+        height: 30px;
+        font-size: .9em;
+        margin: 6px;
+        color: var(--cinza);
+    }
+
+    main > section.info > form > div {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    main > section.info > form > div > input[type = submit] {
+        width: 80px;
+        border: 1px solid var(--marrom);
+        border-radius: 20px;
+        padding: 3px 10px;
+        background-color: #89888c28;
+    }
+
+    main > section.info > form > div > div > label {
+        font-size: .7em;
+    }
+
+    main > section.info > form > div > a {
+        text-decoration: none;
+        color: var(--cinza);
+        font-size: .9em;
+    }
+
+    main > p {
+        padding: 30px;
+        text-align: center;
+        font-size: .9em;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../deifinicoes-visuais/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- Falta colocar o "Se preferir, entre com uma rede social!" e os icones do face e gmail -->
+    <header>
+        <div><a href="../index.html"><img src="../../deifinicoes-visuais/pagina-inicial.png" alt="Logo" width="250px"></a></div>
+        <div>
+            <a href="#"><span class="material-icons">person</span></a>
+            <a href="#"><span class="material-icons">favorite</span></a>
+            <a href="#"><span class="material-icons">shopping_bag</span></a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="../index.html">Início</a>
+        <a href="destaques.html">Destaques</a>
+        <a href="#">Artistas</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <main>
+        <section class="campo-de-verificacao">
+            <!-- Adicionar Javascript que ao clicar em cada icone, vai mudar o display (tirando o none e entrando) e entrar em cada do cliente e login, o cadastro vai pra outra tela mesmo (ou vê como fica para fazer nessa mesma tela)-->
+            <nav>
+                <a href="login.html">Login Cliente</a>
+                <a href="login.html">Login Artista</a>
+                <a href="#" class="utilizando">Cadastro</a>
+            </nav>
+        </section>
+        <!-- Falta colocar o cadastro com rede social e tambem um paragrafo com o link para cadastro do artista -->
+        <section class="info">
+            <form action="cadastro.cs" method="post" autocomplete="on">
+                <label for="inome">Nome</label><br>
+                <input type="text" name="nome" id="inome" required placeholder="Nome"><br>
+                <label for="isobrenome">Sobrenome</label><br>
+                <input type="text" name="sobrenome" id="isobrenome" required placeholder="Sobrenome"><br>
+                <label for="itelefone">Telefone</label><br>
+                <input type="tel" name="telefone" id="itelefone" required placeholder="Telefone"><br>
+                <label for="ilogin">Login</label><br>
+                <input type="email" name="login" id="ilogin" required placeholder="E-mail"><br>
+                <label for="isenha">Senha</label><br>
+                <input type="password" name="senha" id="isenha" required placeholder="Senha"><br>
+                <div>
+                    <div>
+                        <input type="checkbox" name="termos" id="itermos" required>
+                        <label for="itermos">Concorda com os Termos de uso da Inspired Haven</label>
+                    </div>
+                    <input type="submit" value="Cadastrar">
+                </div>
+            </form>
+        </section>
+        <p>"Sou artista e gostaria de expor minha arte", <a href="cadastro-artista.html">clique aqui</a></p>
+    </main>
+
+    <hr>
+    <footer>
+        <ul>
+            <li>
+                <div>
+                <a href="#">Sobre</a>
+                <a href="#"><span class="material-icons">add</span></a>
+                </div>
+            </li>
+            <li>
+                <div>
+                <a href="#">Informação</a>
+                <a href="#"><span class="material-icons">add</span></a>
+                </div>
+            </li>
+        </ul>
+    </footer>
+    <hr>
+</body>
+</html>
