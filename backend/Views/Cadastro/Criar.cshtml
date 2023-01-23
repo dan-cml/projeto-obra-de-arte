@@ -309,21 +309,6 @@
 </head>
 <body>
     <!-- Falta colocar o "Se preferir, entre com uma rede social!" e os icones do face e gmail -->
-    <header>
-        <div><a href="../index.html"><img src="../../deifinicoes-visuais/pagina-inicial.png" alt="Logo" width="250px"></a></div>
-        <div>
-            <a href="#"><span class="material-icons">person</span></a>
-            <a href="#"><span class="material-icons">favorite</span></a>
-            <a href="#"><span class="material-icons">shopping_bag</span></a>
-        </div>
-    </header>
-
-    <nav>
-        <a href="../index.html">Início</a>
-        <a href="destaques.html">Destaques</a>
-        <a href="#">Artistas</a>
-        <a href="contato.html">Contato</a>
-    </nav>
 
     <main>
         <section class="campo-de-verificacao">
@@ -336,28 +321,32 @@
         </section>
         <!-- Falta colocar o cadastro com rede social e tambem um paragrafo com o link para cadastro do artista -->
         <section class="info">
-            <form action="cadastro.cs" method="post" autocomplete="on">
-                <label for="inome">Nome</label><br>
-                <input type="text" name="nome" id="inome" required placeholder="Nome"><br>
-                <label for="isobrenome">Sobrenome</label><br>
-                <input type="text" name="sobrenome" id="isobrenome" required placeholder="Sobrenome"><br>
-                <label for="itelefone">Telefone</label><br>
-                <input type="tel" name="telefone" id="itelefone" required placeholder="Telefone"><br>
-                <label for="ilogin">Login</label><br>
-                <input type="email" name="login" id="ilogin" required placeholder="E-mail"><br>
-                <label for="isenha">Senha</label><br>
-                <input type="password" name="senha" id="isenha" required placeholder="Senha"><br>
+            <form asp-action="Criar" method="post" autocomplete="on">
+                <label asp-for="Nome">Nome</label><br>
+                <input type="text" asp-for="Nome" required placeholder="Nome"><br>
+                <label asp-for="Sobrenome">Sobrenome</label><br>
+                <input type="text" asp-for="Sobrenome" required placeholder="Sobrenome"><br>
+                <label asp-for="Telefone">Telefone</label><br>
+                <input type="tel" asp-for="Telefone" required placeholder="Telefone"><br>
+                <label asp-for="Email">Login</label><br>
+                <input type="email" asp-for="Email" required placeholder="E-mail"><br>
+                <label asp-for="Senha">Senha</label><br>
+                <input type="password" asp-for="Senha" required placeholder="Senha"><br>
                 <div>
                     <div>
                         <input type="checkbox" name="termos" id="itermos" required>
                         <label for="itermos">Concorda com os Termos de uso da Inspired Haven</label>
                     </div>
-                    <input type="submit" value="Cadastrar">
+                    <input type="submit" value="Criar">
                 </div>
             </form>
         </section>
         <p>"Sou artista e gostaria de expor minha arte", <a href="cadastro-artista.html">clique aqui</a></p>
     </main>
+
+    <div>
+        <a asp-action="Index">Voltar</a>
+    </div>
 
     <hr>
     <footer>

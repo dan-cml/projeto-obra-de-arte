@@ -10,11 +10,32 @@ namespace backend.Controllers
 {
     public class CadastroController : Controller
     {
+        private readonly CadastroContext _context;
+
+        public CadastroController(CadastroContext context)
+        {
+            _context = context;
+        }
         public IActionResult Index()
         {
             return View();
         }
         public IActionResult Criar()
+        {
+            return View();
+        }
+        public IActionResult Criar(Cadastro contato)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Cadastros.Add(contato);
+                _context.SaveChanges();
+                //E aqui depois de salvar eu vou redirecionar para a tela de index
+                return RedirectToAction(nameof(Index));
+            }
+            return View(contato);
+        }
+        public IActionResult teste()
         {
             return View();
         }
