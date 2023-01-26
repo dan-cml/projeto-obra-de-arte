@@ -45,4 +45,9 @@ Grandes telas: acima de 1200px
         width: 100vw;
         height: 500px;
     }
+
+    main > section.obras > ul {
+        columns: 3;
+    }
+    
 }

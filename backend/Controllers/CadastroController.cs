@@ -24,6 +24,7 @@ namespace backend.Controllers
         {
             return View();
         }
+        [HttpPost]
         public IActionResult Criar(Cadastro contato)
         {
             if (ModelState.IsValid)
