@@ -66,6 +66,16 @@ main {
     margin: auto;
 }
 
+main > section.video {
+    display: flex;
+    justify-content: center;
+}
+
+main > section.video > video {
+    width: 100%;
+    opacity: .8;
+}
+
 main > section.texto {
     padding: 30px 20px 20px;
 }
